@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/include_toolbar"/>
+
+        <LinearLayout
+            android:id="@+id/item_phone"
+            style="@style/Setting_GroupStyle"
+            android:layout_marginTop="0dp"
+            android:layout_height="@dimen/setting_item_height"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/bg_setting_item_selecor"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_name_title"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/setting_item_height"
+                android:text="本机号码"
+                style="@style/Setting_Group_item_TvStyle"
+                android:drawableRight="@color/color_white"
+                android:clickable="false"
+                android:background="@color/translucent"
+                />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:text=""
+                android:drawableRight="@color/color_white"
+                style="@style/Setting_Group_item_SubTvStyle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Setting_GroupStyle" >
+            <!--消息推送-->
+            <LinearLayout
+                android:id="@+id/item_msg"
+                style="@style/Setting_GroupStyle"
+                android:layout_marginTop="0dp"
+                android:layout_height="@dimen/setting_item_height"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/bg_setting_item_selecor"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_msg_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:text="消息推送"
+                    style="@style/Setting_Group_item_TvStyle"
+                    android:drawableRight="@color/color_white"
+                    android:clickable="false"
+                    android:background="@color/translucent"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_msg_state"
+                    android:text="已开启"
+                    android:drawableRight="@color/color_white"
+                    android:clickable="false"
+                    style="@style/Setting_Group_item_SubTvStyle"/>
+
+            </LinearLayout>
+            <View
+                style="@style/Setting_item_DivideStyle"/>
+            <!--清除缓存-->
+            <LinearLayout
+                android:id="@+id/item_cache"
+                style="@style/Setting_GroupStyle"
+                android:layout_marginTop="0dp"
+                android:layout_height="@dimen/setting_item_height"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/bg_setting_item_selecor"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_cache_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:text="清除缓存"
+                    style="@style/Setting_Group_item_TvStyle"
+                    android:drawableRight="@color/color_white"
+                    android:clickable="false"
+                    android:background="@color/translucent"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_cache_size"
+                    android:text=""
+                    android:drawableRight="@color/color_white"
+                    android:clickable="false"
+                    style="@style/Setting_Group_item_SubTvStyle"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Setting_GroupStyle" >
+            <!--消息推送-->
+            <LinearLayout
+                android:id="@+id/item_kefu"
+                style="@style/Setting_GroupStyle"
+                android:layout_marginTop="0dp"
+                android:layout_height="@dimen/setting_item_height"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/bg_setting_item_selecor"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_kefu_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:text="联系客服"
+                    style="@style/Setting_Group_item_TvStyle"
+                    android:drawableRight="@color/color_white"
+                    android:clickable="false"
+                    android:background="@color/translucent"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_kefu_tel"
+                    android:text="4008779595"
+                    android:drawableRight="@color/color_white"
+                    android:clickable="false"
+                    style="@style/Setting_Group_item_SubTvStyle"/>
+
+            </LinearLayout>
+            <View
+                style="@style/Setting_item_DivideStyle"/>
+
+                <TextView
+                    android:id="@+id/item_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:text="检查版本更新"
+                    android:drawableRight="@color/color_white"
+                    style="@style/Setting_Group_item_TvStyle"
+                    />
+            <View
+                style="@style/Setting_item_DivideStyle"/>
+
+            <TextView
+                android:id="@+id/item_about"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/setting_item_height"
+                android:text="关于"
+                android:drawableRight="@color/color_white"
+                style="@style/Setting_Group_item_TvStyle"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/include_toolbar"/>
+
+        <LinearLayout
+            android:id="@+id/lin_name"
+            style="@style/Setting_GroupStyle"
+            android:layout_marginTop="0dp"
+            android:layout_height="@dimen/setting_item_height"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/bg_setting_item_selecor"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_name_title"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/setting_item_height"
+                android:text="用户名："
+                style="@style/Setting_Group_item_TvStyle"
+                android:drawableRight="@color/color_white"
+                android:clickable="false"
+                android:background="@color/translucent"
+                />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:text="花骨朵er"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                style="@style/Setting_Group_item_SubTvStyle"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_changephone"
+            android:layout_marginTop="0dp"
+            android:text="修改手机号码"
+            style="@style/Setting_GroupTvStyle"
+            />
+
+        <LinearLayout
+            style="@style/Setting_GroupStyle" >
+
+            <TextView
+                android:id="@+id/tv_changepassword"
+                style="@style/Setting_Group_item_TvStyle"
+                android:text="修改密码"
+               />
+            <View
+                style="@style/Setting_item_DivideStyle"/>
+
+            <LinearLayout
+                android:id="@+id/tv_card"
+                style="@style/Setting_GroupStyle"
+                android:layout_marginTop="0dp"
+                android:layout_height="@dimen/setting_item_height"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/bg_setting_item_selecor"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_card_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:text="实名认证"
+                    style="@style/Setting_Group_item_TvStyle"
+                    android:drawableRight="@color/color_white"
+                    android:clickable="false"
+                    android:background="@color/translucent"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_card_state"
+                    android:text="未认证"
+                    android:clickable="false"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical|right"
+                    style="@style/Setting_Group_item_SubTvStyle"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_exit"
+            style="@style/General_Btn_style"
+            android:layout_marginTop="50dp"
+            android:text="退出登录"
+             />
+    </LinearLayout>
+</layout>

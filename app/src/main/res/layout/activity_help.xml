@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+
+    </data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.fazhengyun.ui.activity.HelpActivity">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include android:id="@+id/toolbar"
+                    layout="@layout/include_toolbar"/>
+
+                <TextView
+                    android:id="@+id/tv_questions"
+                    android:layout_below="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:background="@color/bg_tv_pay"
+                    android:textColor="@color/tv_pay_textcolor"
+                    android:layout_height="40dp"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:textSize="16sp"
+                    android:text="常见问题"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="1.如何进行主叫录音？"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:text="（1）登录法证云——》点击【通话录音】图标——》通过拨号键盘或联系人列表呼叫——》自动录音——》通话结束挂机。（2）通话结束，录音文件保存在本地，请及时存证。"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="2.什么本地记录？什么是云端文件？"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:text="本地记录是指您取证后未上传的证据文件，文件存储在您手机本地文件夹中。\n云端文件是指您取证后已上传的证据文件，文件已存储在存证云服务器中。为避免手机中的证据文件丢失，请在取证完成后，尽快对证据文件进行上传操作。"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="3.如何将证据文件提取出来？"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="访问法证云网站（www.fashiyun.com），登录后，即可将文件下载到电脑本地。"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="4.如何修改密码？"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="进入【个人中心】，点击【修改密码】→填写旧密码→编辑新密码→确认新密码→提交即可。"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="5.如何申请在线出证？"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="（1）提交实名认证，提交实名认证手机端和官网均可操作。（2）访问法证云官网（www.fashiyun.com）登录后进入证据列表中即可申请出证。"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

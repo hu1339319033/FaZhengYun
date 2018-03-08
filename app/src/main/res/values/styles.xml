@@ -1,0 +1,176 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:popupBackground">@color/color_white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:labelTextSize">16sp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AutoButton" parent="AppTheme">
+        <item name="buttonStyle">@style/Widget.AppCompat.Button</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+    </style>
+
+    <style name="PasswordCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_password</item>
+    </style>
+
+    <style name="popwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/anim_enter_bottom</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/anim_exit_bottom</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">#00ffffff</item>
+        <!-- 这儿也很重要啊，我这儿用了一张透明的.9.png的图，当然用#00000000也是可以的，否则的话这儿出来后有一个黑色的背景 -->
+        <item name="android:windowBackground">@drawable/dialog_clarity</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="wrapAndwrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="matchAndmatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="matchAndwrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="wrapAndmatch">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!--普通Button按钮样式-->
+    <style name="General_Btn_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:textSize">@dimen/btn_textSize</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:layout_marginLeft">@dimen/btn_margin</item>
+        <item name="android:layout_marginRight">@dimen/btn_margin</item>
+        <item name="android:layout_marginTop">@dimen/btn_margin</item>
+        <item name="android:layout_marginBottom">@dimen/btn_margin</item>
+        <item name="android:background">@drawable/bg_btn_click_r4</item>
+    </style>
+
+    <style name="MenuItemTextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <!--setting item 中间分割线样式-->
+    <style name="Setting_item_DivideStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.2dp</item>
+        <item name="android:layout_marginLeft">@dimen/setting_item_divide_margin</item>
+        <item name="android:layout_marginRight">@dimen/setting_item_divide_margin</item>
+        <item name="android:background">@color/divider_color</item>
+    </style>
+
+    <!--setting group style-->
+    <style name="Setting_GroupStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/setting_group_marginTop</item>
+        <item name="android:background">@color/color_white</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--setting grouptextview style-->
+    <style name="Setting_GroupTvStyle" parent="Setting_GroupStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/setting_item_height</item>
+        <item name="android:textColor">@color/setting_item_textColor</item>
+        <item name="android:textSize">@dimen/setting_item_textSize</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">@dimen/setting_item_padding</item>
+        <item name="android:paddingBottom">@dimen/setting_item_padding</item>
+        <item name="android:paddingLeft">@dimen/setting_item_padding</item>
+        <item name="android:paddingRight">@dimen/setting_item_padding</item>
+        <item name="android:drawableRight">@drawable/ic_chevron_right_black_24dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/bg_setting_item_selecor</item>
+    </style>
+
+    <!--setting itemtextview style-->
+    <style name="Setting_Group_item_TvStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/setting_item_height</item>
+        <item name="android:textColor">@color/setting_item_textColor</item>
+        <item name="android:textSize">@dimen/setting_item_textSize</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/setting_item_padding</item>
+        <item name="android:drawableRight">@drawable/ic_chevron_right_black_24dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/bg_setting_item_selecor</item>
+    </style>
+
+    <!--setting itemsubtextview style-->
+    <style name="Setting_Group_item_SubTvStyle" parent="Setting_Group_item_TvStyle">
+        <item name="android:textColor">@color/setting_item_subtitle_textColor</item>
+        <item name="android:textSize">@dimen/setting_item_subtitle_textSize</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:background">@color/translucent</item>
+    </style>
+
+    <!--label style-->
+    <style name="wrapAndwrap.TvLabelStyle">
+        <item name="android:textColor">@color/tv_labelColor</item>
+        <item name="android:textSize">@dimen/label_textSize</item>
+    </style>
+
+    <!--edittext style-->
+    <style name="EtStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/et_height</item>
+        <item name="android:textColor">@color/et_textColor</item>
+        <item name="android:textSize">@dimen/et_textSize</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginTop">@dimen/et_margin</item>
+        <item name="android:layout_marginLeft">@dimen/et_margin</item>
+        <item name="android:layout_marginRight">@dimen/et_margin</item>
+        <item name="android:background">@drawable/bg_frame_login_corner_white</item>
+    </style>
+
+    <style name="Widget.SeekBar.Normal" parent="@android:style/Widget.SeekBar">
+        <item name="android:maxHeight">8.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <!--<item name="android:progressDrawable">@drawable/seekbar_horizontal</item>-->
+        <item name="android:minHeight">8.0dip</item>
+        <item name="android:thumb">@mipmap/seek_thumb</item>
+        <item name="android:thumbOffset">0dip</item>
+    </style>
+
+</resources>

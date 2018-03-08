@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_all"
+        android:icon="@mipmap/icon_all"
+        android:title="全部"
+        app:showAsAction=""/>
+    <item
+        android:id="@+id/action_already"
+        android:icon="@mipmap/icon_already"
+        android:title="已存证"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_not"
+        android:icon="@mipmap/icon_noalready"
+        android:title="未存证"
+        app:showAsAction="never"/>
+</menu>

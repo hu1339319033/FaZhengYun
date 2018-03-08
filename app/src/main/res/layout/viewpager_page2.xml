@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+    
+    <RelativeLayout
+        android:layout_width="310dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:singleLine="false"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:text="xiyi" />
+        </ScrollView>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="19dp" >
+		
+        <LinearLayout 
+            android:id="@+id/lin_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+            <CheckBox 
+                android:id="@+id/isagree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:text="我已阅读并同意许可协议"/>
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_below="@id/lin_agree"
+            android:background="#666666"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="btclick"
+            android:clickable="true"
+            android:visibility="gone"
+            android:textColor="#ffffff"
+            android:text="开始使用" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+    </data>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/include_toolbar"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/color_white"
+                >
+
+                <LinearLayout
+                    style="@style/Setting_GroupStyle"
+                    android:layout_marginTop="0dp"
+                    android:layout_height="@dimen/setting_item_edittext_height"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@color/color_white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_name_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/setting_item_edittext_height"
+                        android:text="真实姓名"
+                        style="@style/Setting_Group_item_TvStyle"
+                        android:drawableRight="@color/color_white"
+                        android:clickable="false"
+                        android:background="@color/translucent"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        android:hint="请如实填写"
+                        android:textSize="@dimen/setting_item_edittext_textSize"
+                        android:gravity="center_vertical"
+                        style="@style/Setting_Group_item_SubTvStyle"
+                        android:drawableRight="@color/color_white"/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/Setting_item_DivideStyle"/>
+                <LinearLayout
+                    style="@style/Setting_GroupStyle"
+                    android:layout_marginTop="0dp"
+                    android:layout_height="@dimen/setting_item_edittext_height"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@color/color_white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_sex_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/setting_item_edittext_height"
+                        android:text="性       别"
+                        style="@style/Setting_Group_item_TvStyle"
+                        android:drawableRight="@color/color_white"
+                        android:clickable="false"
+                        android:background="@color/translucent"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_sex"
+                        android:text="男"
+                        android:textSize="@dimen/setting_item_edittext_textSize"
+                        android:gravity="center_vertical"
+                        style="@style/Setting_Group_item_SubTvStyle"
+                        android:drawableRight="@color/color_white"/>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/Setting_item_DivideStyle"/>
+                <LinearLayout
+                    style="@style/Setting_GroupStyle"
+                    android:layout_marginTop="0dp"
+                    android:layout_height="@dimen/setting_item_edittext_height"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@color/color_white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_cardtype_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/setting_item_edittext_height"
+                        android:text="证件类型"
+                        style="@style/Setting_Group_item_TvStyle"
+                        android:drawableRight="@color/color_white"
+                        android:clickable="false"
+                        android:background="@color/translucent"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_card_type"
+                        android:text="身份证"
+                        android:textSize="@dimen/setting_item_edittext_textSize"
+                        android:gravity="center_vertical"
+                        style="@style/Setting_Group_item_SubTvStyle"
+                        android:drawableRight="@color/color_white"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/Setting_item_DivideStyle"/>
+                <LinearLayout
+                    style="@style/Setting_GroupStyle"
+                    android:layout_marginTop="0dp"
+                    android:layout_height="@dimen/setting_item_edittext_height"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@color/color_white"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_cardnumber_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/setting_item_edittext_height"
+                        android:text="证件号码"
+                        style="@style/Setting_Group_item_TvStyle"
+                        android:drawableRight="@color/color_white"
+                        android:clickable="false"
+                        android:background="@color/translucent"
+                        />
+
+                    <EditText
+                        android:id="@+id/tv_cardnumber"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/setting_item_edittext_textSize"
+                        style="@style/Setting_Group_item_SubTvStyle"
+                        android:drawableRight="@color/color_white"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/Setting_item_DivideStyle"/>
+                <LinearLayout
+                    style="@style/Setting_GroupStyle"
+                    android:layout_marginTop="0dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@color/color_white"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        style="@style/Setting_GroupStyle"
+                        android:layout_marginTop="0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="@color/color_white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_cardphoto_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/setting_item_edittext_height"
+                            android:text="证件照片"
+                            style="@style/Setting_Group_item_TvStyle"
+                            android:drawableRight="@color/color_white"
+                            android:clickable="false"
+                            android:background="@color/translucent"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/Setting_GroupStyle"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="@color/color_white"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/img_card_front"
+                            android:layout_width="200dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="left"
+                            android:src="@mipmap/ic_card_front" />
+                        <ImageView
+                            android:id="@+id/img_card_reverse"
+                            android:layout_width="200dp"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_gravity="left"
+                            android:src="@mipmap/ic_card_reverse" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_bottom"
+                style="@style/General_Btn_style"
+                android:layout_marginTop="10dp"
+                android:text="提交审核"
+                />
+        </LinearLayout>
+    </ScrollView>
+</layout>

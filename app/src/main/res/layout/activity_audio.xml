@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data></data>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:voiceView="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include android:id="@+id/toolbar"
+            layout="@layout/include_toolbar"/>
+
+        <FrameLayout
+            android:id="@+id/frameLayout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_above="@+id/bottom_btn">
+
+            <android.support.design.widget.CoordinatorLayout
+                android:id="@+id/coordinatorLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                >
+
+                <android.support.design.widget.AppBarLayout
+                    android:id="@+id/appbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tabLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tabGravity="fill"
+                        app:tabMode="fixed"
+                        app:tabIndicatorColor="@color/color_white"/>
+                </android.support.design.widget.AppBarLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    />
+
+            </android.support.design.widget.CoordinatorLayout>
+
+            <LinearLayout
+                android:id="@+id/audio_recorder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@android:color/white"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_stream_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:textSize="24sp"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="@color/color_black"
+                    android:gravity="center"
+                    />
+
+                <com.carlos.voiceline.mylibrary.VoiceLineView
+                    android:id="@+id/voicLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@android:color/white"
+                    voiceView:maxVolume="200"
+                    voiceView:middleLine="@android:color/holo_red_light"
+                    voiceView:middleLineHeight="1dp"
+                    voiceView:fineness="three"
+                    voiceView:rectSpace="2dp"
+                    voiceView:rectWidth="5dp"
+                    voiceView:sensibility="four"
+                    voiceView:viewMode="line"
+                    voiceView:voiceLine="@android:color/holo_red_light" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <include
+            android:id="@+id/bottom_btn"
+            layout="@layout/include_bottom_btn"/>
+    </RelativeLayout>
+</layout>

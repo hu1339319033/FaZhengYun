@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+
+    </data>
+        <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:foregroundGravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:background="@color/border_block">
+            <Button
+                android:id="@+id/btn_start"
+                style="@style/General_Btn_style"
+                android:text="@string/btn_record_start"
+                android:visibility="visible"/>
+            <LinearLayout
+                android:id="@+id/lin_deleteAndcun"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <Button
+                    android:id="@+id/btn_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="删除"
+                    style="@style/General_Btn_style"/>
+
+                <Button
+                    android:id="@+id/btn_commit"
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="存证"
+                    style="@style/General_Btn_style"/>
+            </LinearLayout>
+        </FrameLayout>
+</layout>

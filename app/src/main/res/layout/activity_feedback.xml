@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.fazhengyun.ui.activity.FeedbackActivity"
+        >
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/include_toolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="您有什么问题或建议想对我们说？"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_edittext_feedback"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:gravity="center_vertical|left"
+                android:hint="您的主题："/>
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_edittext_feedback"
+                android:textSize="16sp"
+                android:gravity="left"
+                android:padding="10dp"
+                android:hint="您的宝贵意见，就是我们进步的源泉"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="(ˇˍˇ) 请详细描述您遇到的问题，有助于我们快速定位并解决问题，货留下您宝贵的建议或意见，我们会认真进行评估！"
+                />
+
+            <Button
+                android:id="@+id/btn_commit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:text="提交反馈"
+                android:textColor="@color/color_white"
+                android:background="@drawable/bg_btn_click_r4"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

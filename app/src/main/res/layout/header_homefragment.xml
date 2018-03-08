@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <Button
+            android:id="@+id/bt_create"
+            android:layout_width="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="创建定位"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:drawableLeft="@drawable/ic_add_circle_outline_black_24dp"
+            android:background="@drawable/bg_btn_click_r4"
+            android:layout_centerInParent="true"
+
+            />
+    </RelativeLayout>
+</layout>
